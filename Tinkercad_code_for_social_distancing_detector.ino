@@ -1,8 +1,8 @@
-const int pingPin = 13; // Trigger Pin of Ultrasonic Sensor
-const int echoPin = 12; // Echo Pin of Ultrasonic Sensor
-const int buzzer = 11; // Buzzer Pin
+const int pingPin = 13; 
+const int echoPin = 12; 
+const int buzzer = 11; 
 void setup() {
-   Serial.begin(9600); // Starting Serial Terminal
+   Serial.begin(9600); 
 }
 
 void loop() {
@@ -36,8 +36,4 @@ void loop() {
 
 long microsecondsToInches(long microseconds) {
    return microseconds / 74 / 2;
-}
-
-long microsecondsToCentimeters(long microseconds) {
-   return microseconds / 29 / 2;
 }
