@@ -2,15 +2,15 @@ const int pingPin = 13;
 const int echoPin = 12; 
 const int buzzer = 11; 
 void setup() {
+   pinMode(pingPin, OUTPUT);
+   pinMode(buzzer, OUTPUT);
    Serial.begin(9600); 
 }
 
 void loop() {
    
    long duration, inches, cm;
-   pinMode(pingPin, OUTPUT);
    digitalWrite(pingPin, LOW);
-   pinMode(buzzer, OUTPUT);
    delayMicroseconds(2);
    digitalWrite(pingPin, HIGH);
    delayMicroseconds(10);
